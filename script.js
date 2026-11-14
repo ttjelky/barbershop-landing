@@ -11,6 +11,7 @@ function setMenu(open) {
   burger.setAttribute('aria-expanded', String(open));
   burger.setAttribute('aria-label', open ? 'Закрити меню' : 'Відкрити меню');
   document.body.style.overflow = open ? 'hidden' : '';
+  document.body.classList.toggle('menu-open', open);
 }
 burger.addEventListener('click', () => setMenu(!nav.classList.contains('is-open')));
 nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));

@@ -261,14 +261,29 @@ h1, h2, h3, p { margin: 0; }
   .burger span { width: 26px; height: 1px; background: var(--paper); transition: transform .3s; }
   .burger[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
   .burger[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
+  /* відкрите меню: шапка без blur, інакше fixed-меню обрізається її висотою */
+  body.menu-open .nav-bar { backdrop-filter: none; background: var(--ink-2); }
+  body.menu-open .mobile-book { transform: translateY(150%); }
   .nav {
-    position: fixed; inset: 0; z-index: -1; margin: 0; background: var(--ink-2);
-    flex-direction: column; justify-content: center; gap: 6px; padding: 0 var(--gutter);
+    position: fixed; top: 0; left: 0; width: 100%; height: 100vh; height: 100dvh;
+    z-index: -1; margin: 0; background: var(--ink-2);
+    flex-direction: column; justify-content: center; gap: 0;
+    padding: 90px var(--gutter) 40px; counter-reset: nav;
     opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s;
   }
   .nav.is-open { opacity: 1; visibility: visible; }
-  .nav a { font-family: var(--serif); font-size: 42px; letter-spacing: 0; text-transform: none; color: var(--tan); padding: 6px 0; }
+  .nav a {
+    display: flex; align-items: baseline; gap: 18px;
+    font-family: var(--serif); font-size: clamp(34px, 10vw, 46px); line-height: 1.1; letter-spacing: 0; text-transform: none;
+    color: var(--paper); padding: 16px 0; border-bottom: 1px solid var(--line);
+  }
+  .nav a:first-child { border-top: 1px solid var(--line); }
+  .nav a::before {
+    counter-increment: nav; content: "0" counter(nav);
+    font-size: 14px; font-style: italic; color: var(--tan-soft); min-width: 22px;
+  }
   .nav a::after { display: none; }
+  .nav .nav__book { color: var(--tan); }
 
   /* hero стає вертикальним */
   .hero { height: auto; max-height: none; display: flex; flex-direction: column; }
