@@ -3,258 +3,254 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BRITVA — барбершоп у Кременчуці | Чоловічі стрижки та гоління</title>
-  <meta name="description" content="Барбершоп BRITVA у Кременчуці: чоловічі стрижки, оформлення бороди, королівське гоління. Онлайн-запис за 30 секунд.">
+  <title>BRITVA — барбершоп у Кременчуці</title>
+  <meta name="description" content="Барбершоп BRITVA у Кременчуці: чоловічі стрижки, борода, королівське гоління. Онлайн-запис на зручний час.">
   <meta property="og:title" content="BRITVA — барбершоп у Кременчуці">
-  <meta property="og:description" content="Стрижки, борода, гоління. Онлайн-запис за 30 секунд.">
+  <meta property="og:description" content="Стрижки, борода, гоління небезпечною бритвою. Онлайн-запис.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1759134198561-e2041049419c?w=1200&q=75&auto=format&fit=crop">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#111111">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' font-weight='700' text-anchor='middle' fill='%23d4a35a'%3EB%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#121110">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23121110'/%3E%3Ctext x='32' y='48' font-family='Georgia' font-size='46' text-anchor='middle' fill='%23b39b7a'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== ШАПКА ===== -->
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a href="#top" class="logo" aria-label="BRITVA — на початок">
-        <span class="logo__mark">B</span>
-        <span class="logo__text">BRITVA</span>
-      </a>
-      <nav class="nav" id="nav" aria-label="Головне меню">
-        <a href="#services">Послуги</a>
-        <a href="#masters">Майстри</a>
-        <a href="#reviews">Відгуки</a>
-        <a href="#contacts">Контакти</a>
-      </nav>
-      <a href="tel:+380670000000" class="header__phone">+38 (067) 000-00-00</a>
-      <a href="#booking" class="btn btn--small header__cta">Записатися</a>
-      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <header class="nav-bar" id="top">
+    <a href="#top" class="brand" aria-label="BRITVA — на початок">BRITVA</a>
+    <nav class="nav" id="nav" aria-label="Головне меню">
+      <a href="#services">Послуги</a>
+      <a href="#gallery">Роботи</a>
+      <a href="#masters">Майстри</a>
+      <a href="#contacts">Контакти</a>
+      <a href="#booking" class="nav__book">Запис</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
   </header>
 
   <main>
-    <!-- ===== ГОЛОВНИЙ ЕКРАН ===== -->
+    <!-- ===== 1. ГОЛОВНИЙ ЕКРАН ===== -->
     <section class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="container hero__inner">
-        <p class="hero__eyebrow">Барбершоп у центрі Кременчука</p>
-        <h1 class="hero__title">Стрижка, після якої<br><span>не треба нічого пояснювати</span></h1>
-        <p class="hero__lead">Чоловічі стрижки, борода і гоління небезпечною бритвою. Без черг — записуйтеся онлайн на зручний час.</p>
+      <div class="hero__photo">
+        <img src="https://images.unsplash.com/photo-1759134198561-e2041049419c?w=1400&q=75&auto=format&fit=crop"
+             alt="Барбери працюють із клієнтами в залі барбершопу" fetchpriority="high">
+      </div>
+      <span class="hero__rule" aria-hidden="true"></span>
+
+      <h1 class="hero__title">
+        <span class="hero__word" aria-hidden="true">BRITVA</span>
+        <span class="visually-hidden">BRITVA — барбершоп у Кременчуці</span>
+      </h1>
+
+      <p class="hero__side" aria-hidden="true">Barbershop · Kremenchuk</p>
+
+      <div class="hero__card">
+        <p class="kicker">Барбершоп у центрі Кременчука</p>
+        <p class="hero__lead">Чоловічі стрижки, борода і гоління небезпечною бритвою. Записуєтесь на 18:00 — сідаєте в крісло о 18:00.</p>
         <div class="hero__actions">
-          <a href="#booking" class="btn">Записатися онлайн</a>
-          <a href="#services" class="btn btn--ghost">Ціни</a>
+          <a href="#booking" class="btn">Записатися</a>
+          <a href="tel:+380670000000" class="link">+38 067 000 00 00</a>
         </div>
-        <ul class="hero__stats">
-          <li><strong>4.9 ★</strong><span>120+ відгуків у Google</span></li>
-          <li><strong>6 років</strong><span>стрижемо Кременчук</span></li>
-          <li><strong>45 хв</strong><span>середній візит</span></li>
-        </ul>
+      </div>
+
+      <div class="hero__detail">
+        <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=1100&q=75&auto=format&fit=crop"
+             alt="Барбер робить фейд машинкою">
       </div>
     </section>
 
-    <!-- ===== ПОСЛУГИ ===== -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Послуги і ціни</p>
-          <h2>Ціна відома до візиту</h2>
-          <p class="section__lead">Ніяких «доплат на місці». Кава, чай і вода — безкоштовно.</p>
-        </div>
-        <ul class="price-list">
-          <li class="price">
-            <div class="price__info"><h3>Чоловіча стрижка</h3><p>Консультація, миття голови, стрижка, укладка</p></div>
-            <div class="price__meta"><span class="price__time">45 хв</span><span class="price__value">400 грн</span></div>
-          </li>
-          <li class="price">
-            <div class="price__info"><h3>Стрижка машинкою</h3><p>Одна насадка або фейд, окантовка</p></div>
-            <div class="price__meta"><span class="price__time">30 хв</span><span class="price__value">300 грн</span></div>
-          </li>
-          <li class="price">
-            <div class="price__info"><h3>Оформлення бороди</h3><p>Форма, контури, гарячий рушник, олія</p></div>
-            <div class="price__meta"><span class="price__time">30 хв</span><span class="price__value">300 грн</span></div>
-          </li>
-          <li class="price price--hit">
-            <div class="price__info"><h3>Стрижка + борода <em>хіт</em></h3><p>Повний комплекс за один візит</p></div>
-            <div class="price__meta"><span class="price__time">75 хв</span><span class="price__value">600 грн</span></div>
-          </li>
-          <li class="price">
-            <div class="price__info"><h3>Королівське гоління</h3><p>Небезпечна бритва, гарячі рушники, догляд</p></div>
-            <div class="price__meta"><span class="price__time">40 хв</span><span class="price__value">350 грн</span></div>
-          </li>
-          <li class="price">
-            <div class="price__info"><h3>Дитяча стрижка</h3><p>Для хлопців до 12 років</p></div>
-            <div class="price__meta"><span class="price__time">30 хв</span><span class="price__value">250 грн</span></div>
-          </li>
-        </ul>
+    <!-- ===== 2. МАНІФЕСТ ===== -->
+    <section class="manifest">
+      <div class="wrap manifest__inner">
+        <p class="manifest__num">Est. 2020</p>
+        <p class="manifest__text">Ми не женемося за трендами з TikTok. Ми робимо стрижку, яка <em>тримає форму місяць</em> і лягає сама — навіть якщо зранку у вас є тільки п’ять хвилин.</p>
+        <dl class="facts">
+          <div><dt>4.9</dt><dd>рейтинг у Google, 120+ відгуків</dd></div>
+          <div><dt>6</dt><dd>років стрижемо Кременчук</dd></div>
+          <div><dt>3</dt><dd>дні на безкоштовну корекцію</dd></div>
+        </dl>
       </div>
     </section>
 
-    <!-- ===== ЧОМУ МИ ===== -->
-    <section class="section section--dark">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Чому до нас повертаються</p>
-          <h2>Чотири речі, які ми не робимо інакше</h2>
+    <!-- ===== 3. ПОСЛУГИ ===== -->
+    <section class="services" id="services">
+      <div class="wrap services__inner">
+        <div class="services__aside">
+          <h2 class="display">Послуги<br><em>і ціни</em></h2>
+          <figure class="services__photo">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=900&q=75&auto=format&fit=crop"
+                 alt="Машинки, ножиці, гребінець і засоби для догляду" loading="lazy">
+          </figure>
         </div>
-        <div class="features">
-          <article class="feature">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <h3>Приймаємо вчасно</h3>
-            <p>Записались на 18:00 — сідаєте в крісло о 18:00, а не о 18:20.</p>
-          </article>
-          <article class="feature">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l7-7M14 4l6 6-9 9H5v-6z"/></svg>
-            <h3>Стерильні інструменти</h3>
-            <p>Сухожарова шафа та одноразові леза для кожного клієнта.</p>
-          </article>
-          <article class="feature">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 10h8M8 14h5"/><path d="M4 5h16v11H9l-5 4z"/></svg>
-            <h3>Спершу слухаємо</h3>
-            <p>Перед стрижкою майстер уточнює, як ви укладаєтесь і скільки часу на це маєте.</p>
-          </article>
-          <article class="feature">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>
-            <h3>Безкоштовна корекція</h3>
-            <p>Щось не так протягом 3 днів — поправимо без оплати.</p>
-          </article>
-        </div>
+        <ol class="menu">
+          <li class="menu__item">
+            <span class="menu__num">01</span>
+            <div class="menu__body"><h3>Чоловіча стрижка</h3><p>Консультація, миття, стрижка, укладка · 45 хв</p></div>
+            <span class="menu__price">400</span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__num">02</span>
+            <div class="menu__body"><h3>Стрижка машинкою</h3><p>Одна насадка або фейд, окантовка · 30 хв</p></div>
+            <span class="menu__price">300</span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__num">03</span>
+            <div class="menu__body"><h3>Оформлення бороди</h3><p>Форма, контури, гарячий рушник, олія · 30 хв</p></div>
+            <span class="menu__price">300</span>
+          </li>
+          <li class="menu__item menu__item--accent">
+            <span class="menu__num">04</span>
+            <div class="menu__body"><h3>Стрижка і борода</h3><p>Повний комплекс за один візит · 75 хв</p></div>
+            <span class="menu__price">600</span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__num">05</span>
+            <div class="menu__body"><h3>Королівське гоління</h3><p>Небезпечна бритва, гарячі рушники · 40 хв</p></div>
+            <span class="menu__price">350</span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__num">06</span>
+            <div class="menu__body"><h3>Дитяча стрижка</h3><p>Для хлопців до 12 років · 30 хв</p></div>
+            <span class="menu__price">250</span>
+          </li>
+          <li class="menu__note">Ціни в гривнях. Кава, чай і вода — безкоштовно.</li>
+        </ol>
       </div>
     </section>
 
-    <!-- ===== МАЙСТРИ ===== -->
-    <section class="section" id="masters">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Команда</p>
-          <h2>Майстри</h2>
+    <!-- ===== 4. ГАЛЕРЕЯ ===== -->
+    <section class="gallery" id="gallery">
+      <h2 class="gallery__title display" aria-label="Наші роботи"><span aria-hidden="true">Наші роботи</span></h2>
+      <div class="collage">
+        <figure class="collage__a"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000&q=75&auto=format&fit=crop" alt="Гоління бороди небезпечною бритвою" loading="lazy"></figure>
+        <p class="collage__t1">Кожен візит починається з розмови: як ви укладаєтесь, скільки часу на це маєте, що не сподобалось минулого разу.</p>
+        <figure class="collage__b"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&q=75&auto=format&fit=crop" alt="Окантовка бритвою" loading="lazy"></figure>
+        <figure class="collage__c"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1000&q=75&auto=format&fit=crop" alt="Зал барбершопу з шкіряними кріслами" loading="lazy"></figure>
+        <figure class="collage__d"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=700&q=75&auto=format&fit=crop" alt="Оформлення бороди ножицями" loading="lazy"></figure>
+        <p class="collage__t2">Стерильні інструменти, одноразові леза і гарячі рушники — для кожного клієнта, без винятків.</p>
+      </div>
+    </section>
+
+    <!-- ===== 5. МАЙСТРИ ===== -->
+    <section class="masters" id="masters">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display">Майстри</h2>
+          <p>Троє людей, яким довіряють голови половини центру міста.</p>
         </div>
-        <div class="masters">
+        <div class="masters__grid">
           <article class="master">
-            <div class="master__photo" data-initials="ДК" aria-hidden="true"></div>
+            <figure><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=700&q=75&auto=format&fit=crop" alt="Барбер Денис за роботою" loading="lazy"></figure>
+            <p class="master__num">I</p>
             <h3>Денис</h3>
             <p class="master__role">Топ-барбер · 8 років</p>
-            <p>Класичні стрижки, складні фейди, борода.</p>
+            <p>Класика, складні фейди, борода.</p>
           </article>
           <article class="master">
-            <div class="master__photo master__photo--2" data-initials="АМ" aria-hidden="true"></div>
+            <figure><img src="https://images.unsplash.com/photo-1647140655214-e4a2d914971f?w=700&q=75&auto=format&fit=crop" alt="Барбер Артем за роботою" loading="lazy"></figure>
+            <p class="master__num">II</p>
             <h3>Артем</h3>
             <p class="master__role">Барбер · 4 роки</p>
-            <p>Сучасні текстурні стрижки, королівське гоління.</p>
+            <p>Текстурні стрижки, королівське гоління.</p>
           </article>
           <article class="master">
-            <div class="master__photo master__photo--3" data-initials="ІС" aria-hidden="true"></div>
+            <figure><img src="https://images.unsplash.com/photo-1657105052497-f996284ffff8?w=700&q=75&auto=format&fit=crop" alt="Барбер Ігор за роботою" loading="lazy"></figure>
+            <p class="master__num">III</p>
             <h3>Ігор</h3>
             <p class="master__role">Барбер · 3 роки</p>
-            <p>Стрижки машинкою, дитячі стрижки.</p>
+            <p>Машинка, ножиці, дитячі стрижки.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== ВІДГУКИ ===== -->
-    <section class="section section--alt" id="reviews">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Відгуки</p>
-          <h2>4.9 з 5 у Google</h2>
-          <p class="section__lead">Кілька відгуків наших клієнтів.</p>
-        </div>
-        <div class="reviews">
-          <figure class="review">
-            <div class="review__stars" aria-label="5 з 5">★★★★★</div>
-            <blockquote>Ходжу третій рік тільки до Дениса. Жодного разу не довелося чекати, стрижка тримає форму місяць.</blockquote>
+    <!-- ===== 6. ВІДГУКИ ===== -->
+    <section class="reviews" id="reviews">
+      <div class="wrap">
+        <p class="kicker">4.9 з 5 · Google</p>
+        <div class="reviews__grid">
+          <figure class="quote">
+            <blockquote>«Ходжу третій рік тільки до Дениса. Жодного разу не чекав, стрижка тримає форму місяць.»</blockquote>
             <figcaption>Олександр</figcaption>
           </figure>
-          <figure class="review">
-            <div class="review__stars" aria-label="5 з 5">★★★★★</div>
-            <blockquote>Записав сина і себе на один час — підстригли одночасно, поки пили каву. Дуже зручно.</blockquote>
+          <figure class="quote">
+            <blockquote>«Записав сина і себе на один час — підстригли обох, поки я пив каву.»</blockquote>
             <figcaption>Максим</figcaption>
           </figure>
-          <figure class="review">
-            <div class="review__stars" aria-label="5 з 5">★★★★★</div>
-            <blockquote>Королівське гоління — окреме задоволення. Шкіра без жодного подразнення.</blockquote>
+          <figure class="quote">
+            <blockquote>«Королівське гоління — окреме задоволення. Жодного подразнення.»</blockquote>
             <figcaption>Віталій</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ===== ЗАПИС ===== -->
-    <section class="section section--dark" id="booking">
-      <div class="container booking">
-        <div class="booking__text">
-          <p class="eyebrow">Онлайн-запис</p>
-          <h2>Запишіться за 30 секунд</h2>
-          <p>Оберіть послугу і зручний час — адміністратор підтвердить запис у Telegram або дзвінком протягом 15 хвилин.</p>
-          <ul class="booking__alt">
-            <li><a href="tel:+380670000000">📞 +38 (067) 000-00-00</a></li>
-            <li><a href="https://t.me/" target="_blank" rel="noopener">✈️ Написати в Telegram</a></li>
-          </ul>
-        </div>
+    <!-- ===== 7. ЗАПИС ===== -->
+    <section class="booking" id="booking">
+      <figure class="booking__photo">
+        <img src="https://images.unsplash.com/photo-1536520002442-39764a41e987?w=1100&q=75&auto=format&fit=crop" alt="Інтер’єр барбершопу з підвісними лампами" loading="lazy">
+      </figure>
+      <div class="booking__panel">
+        <h2 class="display">Запис<br><em>онлайн</em></h2>
+        <p class="booking__lead">Залиште заявку — адміністратор підтвердить час у Telegram або дзвінком протягом 15 хвилин.</p>
         <form class="form" id="booking-form" novalidate>
           <label class="field">
-            <span>Ваше ім’я</span>
-            <input type="text" name="name" autocomplete="given-name" required placeholder="Олександр">
+            <span>Ім’я</span>
+            <input type="text" name="name" autocomplete="given-name" required>
           </label>
           <label class="field">
             <span>Телефон</span>
-            <input type="tel" name="phone" autocomplete="tel" required placeholder="+38 (0__) ___-__-__" inputmode="tel">
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required placeholder="067 123 45 67">
           </label>
-          <label class="field">
+          <label class="field field--wide">
             <span>Послуга</span>
             <select name="service" required>
               <option value="">Оберіть послугу</option>
               <option>Чоловіча стрижка — 400 грн</option>
               <option>Стрижка машинкою — 300 грн</option>
               <option>Оформлення бороди — 300 грн</option>
-              <option>Стрижка + борода — 600 грн</option>
+              <option>Стрижка і борода — 600 грн</option>
               <option>Королівське гоління — 350 грн</option>
               <option>Дитяча стрижка — 250 грн</option>
             </select>
           </label>
-          <div class="field-row">
-            <label class="field">
-              <span>Дата</span>
-              <input type="date" name="date" required>
-            </label>
-            <label class="field">
-              <span>Час</span>
-              <select name="time" required>
-                <option value="">--:--</option>
-                <option>10:00</option><option>11:00</option><option>12:00</option>
-                <option>13:00</option><option>14:00</option><option>15:00</option>
-                <option>16:00</option><option>17:00</option><option>18:00</option>
-                <option>19:00</option>
-              </select>
-            </label>
-          </div>
-          <button type="submit" class="btn btn--full">Записатися</button>
-          <p class="form__note">Натискаючи кнопку, ви погоджуєтесь на обробку телефону для підтвердження запису.</p>
-          <div class="form__success" id="form-success" role="status" hidden>
-            <strong>Дякуємо, заявку прийнято!</strong>
-            <span>Демо-версія: у робочому сайті заявка одразу приходить власнику в Telegram.</span>
-          </div>
+          <label class="field">
+            <span>Дата</span>
+            <input type="date" name="date" required>
+          </label>
+          <label class="field">
+            <span>Час</span>
+            <select name="time" required>
+              <option value="">—</option>
+              <option>10:00</option><option>11:00</option><option>12:00</option>
+              <option>13:00</option><option>14:00</option><option>15:00</option>
+              <option>16:00</option><option>17:00</option><option>18:00</option>
+              <option>19:00</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--solid field--wide">Надіслати заявку</button>
+          <p class="form__success field--wide" id="form-success" role="status" hidden>
+            Дякуємо, заявку прийнято. <span>Демо: у робочій версії заявка одразу приходить власнику в Telegram.</span>
+          </p>
         </form>
       </div>
     </section>
 
-    <!-- ===== КОНТАКТИ ===== -->
-    <section class="section" id="contacts">
-      <div class="container contacts">
-        <div class="contacts__info">
-          <p class="eyebrow">Контакти</p>
-          <h2>Як нас знайти</h2>
+    <!-- ===== 8. КОНТАКТИ ===== -->
+    <section class="contacts" id="contacts">
+      <div class="wrap contacts__inner">
+        <div>
+          <h2 class="display">Контакти</h2>
           <dl class="contacts__list">
-            <div><dt>Адреса</dt><dd>м. Кременчук, вул. Прикладна, 12<br>(вхід з двору, 2 хв від зупинки «Центр»)</dd></div>
-            <div><dt>Графік</dt><dd>Пн–Пт 10:00–20:00<br>Сб–Нд 10:00–18:00</dd></div>
-            <div><dt>Телефон</dt><dd><a href="tel:+380670000000">+38 (067) 000-00-00</a></dd></div>
-            <div><dt>Instagram</dt><dd><a href="https://instagram.com/" target="_blank" rel="noopener">@britva.barber</a></dd></div>
+            <div><dt>Адреса</dt><dd>Кременчук, вул. Прикладна, 12<br>вхід з двору</dd></div>
+            <div><dt>Графік</dt><dd>Пн–Пт 10–20<br>Сб–Нд 10–18</dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+380670000000">+38 067 000 00 00</a></dd></div>
+            <div><dt>Соцмережі</dt><dd><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a> · <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></dd></div>
           </dl>
         </div>
         <div class="contacts__map">
@@ -265,17 +261,14 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
+    <p class="footer__word" aria-hidden="true">BRITVA</p>
+    <div class="wrap footer__row">
       <span>© <span id="year">2026</span> BRITVA barbershop</span>
-      <span class="footer__demo">Демо-сайт. Розробка й дизайн — <a href="https://ttjelky.github.io/portfolio" target="_blank" rel="noopener">Олексій</a></span>
+      <span>Демо-сайт · дизайн і розробка — <a href="https://ttjelky.github.io/portfolio" target="_blank" rel="noopener">Олексій</a> · фото: Unsplash</span>
     </div>
   </footer>
 
-  <!-- Липка кнопка на мобільному -->
-  <div class="mobile-bar">
-    <a href="tel:+380670000000" class="btn btn--ghost">Подзвонити</a>
-    <a href="#booking" class="btn">Записатися</a>
-  </div>
+  <a href="#booking" class="mobile-book">Записатися</a>
 
   <script src="script.js"></script>
 </body>
